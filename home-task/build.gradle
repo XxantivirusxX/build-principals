@@ -16,8 +16,6 @@ jar {
    }
 }
 
-
-
 publishing {
     publications {
         maven(MavenPublication) {

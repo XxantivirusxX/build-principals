@@ -6,8 +6,25 @@
     <groupId>com.mnt.training</groupId>
     <artifactId>home-task</artifactId>
     <packaging>jar</packaging>
-    <version>1.0</version>
+    <version>2.0</version>
     <name>maven-home-task</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                  <archive>
+                    <manifest>
+                      <addClasspath>true</addClasspath>
+                      <classpathPrefix>classes/</classpathPrefix>
+                      <mainClass>com.test.Project</mainClass>
+                    </manifest>
+                  </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <dependencies>
         <dependency>
             <groupId>commons-collections</groupId>

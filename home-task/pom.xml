@@ -4,6 +4,10 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 <groupId>my.first.app</groupId>
 <artifactId>home-task</artifactId>
 <version>1.0a</version>
+<properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
 <dependencies>
 <dependency>
     <groupId>commons-collections</groupId>

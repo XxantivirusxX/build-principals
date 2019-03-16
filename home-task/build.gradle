@@ -23,18 +23,18 @@ jar {
 }
 
 
-task build << {
-	println "my build"
-	finalizedBy build
-}
+// task build << {
+// 	println "my build"
+// 	finalizedBy build
+// }
 
-task test << {
-	println "my test"
-}
+// task test << {
+// 	println "my test"
+// }
 
 task hello << {
 	println "hello"
 }
 
-test.dependsOn build
+// ?! test.dependsOn build
 hello.dependsOn test

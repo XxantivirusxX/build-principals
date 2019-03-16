@@ -1,0 +1,30 @@
+// apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = 'com.test.Project'
+
+repositories {
+   mavenCentral()
+   jcenter()
+}
+
+dependencies {
+   compile 'commons-collections:commons-collections:3.2.1'
+   compile 'log4j:log4j:1.2.17'
+
+   testCompile 'junit:junit:4.12'
+}
+
+jar {
+   manifest {
+      attributes 'Main-Class': 'com.test.Project'
+   }
+   baseName = 'helloworld'
+   version = '0.2'
+}
+
+task hello << {
+	println "hello"
+}
+
+// ?! test.dependsOn build
+hello.dependsOn test

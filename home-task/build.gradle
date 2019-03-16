@@ -26,5 +26,8 @@ task hello << {
 	println "hello"
 }
 
+task test << {
+	println "test"
+}
 // ?! test.dependsOn build
 hello.dependsOn test

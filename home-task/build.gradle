@@ -20,6 +20,11 @@ dependencies {
     testCompile 'junit:junit:4.11'
 }
 
+jar {
+    baseName = 'ci-gradle'
+    version =  '1.0'
+}
+
 group = 'com.mtn.training'
 version = '1.0'
 sourceCompatibility = '1.8'

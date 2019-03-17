@@ -1,0 +1,40 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+
+jar {
+    baseName = 'hello-world-gradle'
+    version =  '0.1.0'
+}
+
+task custom_build {
+	println "Task 'build' is successful"
+}
+
+task custom_test{
+	dependsOn build
+	println "Task 'test' is successful"
+}
+
+task hello(type: JavaExec){
+	dependsOn custom_test	
+	manifest {
+        attributes 'Main-Class': 'com.test.Project'
+   	}
+   	with jar
+}
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
+    testCompile 'junit:junit:4.12'
+}

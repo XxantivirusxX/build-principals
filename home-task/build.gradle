@@ -21,10 +21,12 @@ task custom_test{
 	println "Task 'test' is successful"
 }
 
-task hello(type: JavaExec){
+task hello(type: Jar){
 	dependsOn custom_test	
 	manifest {
-        attributes 'Main-Class': 'com.test.Project'
+        	attributes (
+			'Main-Class': 'com.test.Project'
+		)
    	}
    	with jar
 }
@@ -38,3 +40,5 @@ dependencies {
     compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
     testCompile 'junit:junit:4.12'
 }
+
+mainClassName='com.test.Project'

@@ -4,7 +4,7 @@
  
   <groupId>com.dyurchanka.app</groupId>
   <artifactId>day2homework</artifactId>
-  <version>1.1-first-release</version>
+  <version>2.${v}</version>
   
   <!-- compile step -->
   <properties>

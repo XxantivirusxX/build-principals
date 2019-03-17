@@ -8,21 +8,21 @@
 <version>0.1.0</version>
 <build>
 	<plugins>
-		  <plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-jar-plugin</artifactId>
-			<configuration>
-					<archive>
-						<manifest>
-							<addClasspath>true</addClasspath>
-							<classpathPrefix>classes/</classpathPrefix>
-							<mainClass>
-								com.test.Project
-							</mainClass>
-						</manifest>
-					</archive>
-			</configuration>
-		</plugin>
+	  <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-jar-plugin</artifactId>
+		<configuration>
+			<archive>
+			<manifest>
+				<addClasspath>true</addClasspath>
+				<classpathPrefix>classes/</classpathPrefix>
+				<mainClass>
+					com.test.Project
+		            	</mainClass>
+			</manifest>
+			</archive>
+	        </configuration>
+	  </plugin>
 	</plugins>
 </build>
 

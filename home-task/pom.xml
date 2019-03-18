@@ -8,29 +8,28 @@
   <packaging>jar</packaging>
   <version>1.0.${buildNumber}</version>
   <name>mnt-lab Maven Webapp</name>
+  <properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.9</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>commons.collections</groupId>
-      <artifactId>commons.collections</artifactId>
-      <version>4.2</version>
+      <groupId>commons-collections</groupId>
+      <artifactId>commons-collections</artifactId>
+      <version>3.2.2</version>
     </dependency>
     <dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-api</artifactId>
-    <version>2.11.2</version>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
   </dependency>
-  <dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-core</artifactId>
-    <version>2.11.2</version>
-  </dependency>
-  </dependencies>
+ </dependencies>
   <build>
     <finalName>htask_arom</finalName>
   </build>

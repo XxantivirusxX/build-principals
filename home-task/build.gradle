@@ -28,7 +28,7 @@ jar {
         attributes 'Main-Class': 'com.test.Project'
     }
 }
-mainClassName='com.test.Project'
+
 task my_build {
     
     println "Jar is build succesfully"
@@ -43,3 +43,4 @@ task hello {
     dependsOn my_test
     println "Hello. All is fine and builded"
 }
+mainClassName='com.test.Project'

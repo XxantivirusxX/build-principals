@@ -1,6 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'maven'
-apply plugin: 'application'
+
 
 group = 'org.example'
 version = '1.0'
@@ -28,4 +28,18 @@ jar {
         attributes 'Main-Class': 'com.test.Project'
     }
 }
+mainClassName='com.test.Project'
+task my_build {
+    
+    println "Jar is build succesfully"
+}
 
+task my_test {
+    dependsOn my_build
+    println "Some tests finished succesfully"
+}
+
+task hello {
+    dependsOn my_test
+    println "Hello. All is fine and builded"
+}

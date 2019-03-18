@@ -22,7 +22,6 @@ jar {
    version = '0.2'
 }
 
-
 // task build << {
 // 	println "my build"
 // 	finalizedBy build

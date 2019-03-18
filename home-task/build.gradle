@@ -22,18 +22,20 @@ jar {
    version = '0.2'
 }
 
-// task build << {
-// 	println "my build"
-// 	finalizedBy build
-// }
 
-// task test << {
-// 	println "my test"
-// }
+task mybuild << {
+	println "my build"
+	finalizedBy build
+}
+
+task mytest << {
+  println "my test"
+  finalizedBy test
+}
 
 task hello << {
 	println "hello"
 }
 
-// ?! test.dependsOn build
-hello.dependsOn test
+mytest.dependsOn mybuild
+hello.dependsOn mytest

@@ -6,7 +6,7 @@
   <groupId>org.example</groupId>
   <artifactId>htask</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.${buildNumber}</version>
+  <version>1.0.${BUILD_NUMBER}</version>
   <name>mnt-lab Maven Webapp</name>
   <properties>
     <maven.compiler.source>1.6</maven.compiler.source>
@@ -31,7 +31,7 @@
   </dependency>
  </dependencies>
   <build>
-    <finalName>htask_arom</finalName>
+    <finalName>htask_arom_${BUILD_NUMBER}</finalName>
     <plugins>
     <plugin>
       <!-- Build an executable JAR -->

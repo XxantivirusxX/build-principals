@@ -28,17 +28,4 @@ jar {
         attributes 'Main-Class': 'com.test.Project'
     }
 }
-task my_build (type: Jar) {
-    
-    println "Jar is build succesfully"
-}
 
-task my_test {
-    dependsOn my_build
-    println "Some tests finished succesfully"
-}
-
-task hello {
-    dependsOn my_test
-    println "Hello. All is fine and builded"
-}

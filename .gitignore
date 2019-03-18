@@ -1,1 +1,3 @@
 *.jar
+/home-task/target
+/home-task/build

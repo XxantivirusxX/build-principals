@@ -1,0 +1,48 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'application'
+
+group = 'org.example'
+version = '1.0'
+
+description = """mnt-lab Maven Webapp"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+
+repositories {
+        
+     maven { url "https://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'commons-collections', name: 'commons-collections', version:'3.2.2'
+    compile group: 'log4j', name: 'log4j', version:'1.2.17'
+    testCompile group: 'junit', name: 'junit', version:'4.9'
+}	
+jar {
+    baseName = 'htask_arom'
+    version =  '1.0.0'
+    manifest {
+        attributes (
+             'Main-Class': 'com.test.Project'
+                   )
+    }
+}
+
+task my_build {
+    
+    println "Jar is build succesfully"
+}
+
+task my_test {
+    dependsOn my_build
+    println "Some tests finished succesfully"
+}
+
+task hello {
+    dependsOn my_test
+    println "Hello. All is fine and builded"
+}
+mainClassName='com.test.Project'

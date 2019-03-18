@@ -2,47 +2,43 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'application'
 
-group = 'org.example'
-version = '1.0'
+repositories {
+    mavenCentral()
+}
 
-description = """mnt-lab Maven Webapp"""
+
+jar {
+    baseName = 'hello-world-gradle'
+    version =  '0.1.0'
+}
+
+task custom_build {
+	println "Task 'build' is successful"
+}
+
+task custom_test{
+	dependsOn build
+	println "Task 'test' is successful"
+}
+
+task hello(type: Jar){
+	dependsOn custom_test	
+	manifest {
+        	attributes (
+			'Main-Class': 'com.test.Project'
+		)
+   	}
+   	with jar
+}
+
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-
-
-repositories {
-        
-     maven { url "https://repo.maven.apache.org/maven2" }
-}
 dependencies {
-    compile group: 'commons-collections', name: 'commons-collections', version:'3.2.2'
-    compile group: 'log4j', name: 'log4j', version:'1.2.17'
-    testCompile group: 'junit', name: 'junit', version:'4.9'
-}	
-jar {
-    baseName = 'htask_arom'
-    version =  '1.0.0'
-    manifest {
-        attributes (
-             'Main-Class': 'com.test.Project'
-                   )
-    }
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
+    testCompile 'junit:junit:4.12'
 }
 
-task my_build {
-    
-    println "Jar is build succesfully"
-}
-
-task my_test {
-    dependsOn my_build
-    println "Some tests finished succesfully"
-}
-
-task hello {
-    dependsOn my_test
-    println "Hello. All is fine and builded"
-}
 mainClassName='com.test.Project'

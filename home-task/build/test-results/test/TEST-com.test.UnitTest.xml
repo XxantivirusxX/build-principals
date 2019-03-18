@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.test.UnitTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-03-18T02:25:47" hostname="Acer" time="0.014">
+  <properties/>
+  <testcase name="testAppHasAGreeting" classname="com.test.UnitTest" time="0.011"/>
+  <testcase name="test" classname="com.test.UnitTest" time="0.002"/>
+  <system-out><![CDATA[test
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

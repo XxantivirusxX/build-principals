@@ -1,0 +1,11 @@
+Started by user [8mha:////4BdXCj5WeVOtKEohJQaIGCSuHgDpsIOuvXHLXbpnxBnSAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mJENKA
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /opt/jenkins/workspace/helloworld-stit-maven-build-adhoc
+[helloworld-stit-maven-build-adhoc] $ /bin/sh -xe /tmp/jenkins772011386246880135.sh
++ java -cp /opt/jenkins/artifacts/ci-maven-1.0.jar com.test.Project
+Hello, MNT Lab!
+[helloworld-stit-maven-build-adhoc] $ /bin/sh -xe /tmp/jenkins3408047571668998702.sh
++ java -cp /opt/jenkins/artifacts/ com.test.Project
+Error: Could not find or load main class com.test.Project
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

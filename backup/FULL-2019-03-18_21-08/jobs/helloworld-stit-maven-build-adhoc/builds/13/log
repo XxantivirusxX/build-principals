@@ -1,0 +1,28 @@
+Started by user [8mha:////4BdXCj5WeVOtKEohJQaIGCSuHgDpsIOuvXHLXbpnxBnSAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mJENKA
+[EnvInject] - Loading node environment variables.
+Building in workspace /opt/jenkins/workspace/helloworld-stit-maven-build-adhoc
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/MNT-Lab/build-principals # timeout=10
+Fetching upstream changes from https://github.com/MNT-Lab/build-principals
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/MNT-Lab/build-principals +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/stit^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/stit^{commit} # timeout=10
+Checking out Revision fc44032a6758d70d3328babb7757fecb95bb5031 (refs/remotes/origin/stit)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f fc44032a6758d70d3328babb7757fecb95bb5031
+Commit message: "add block jar for create ci-gradle.jar"
+ > git rev-list --no-walk fc44032a6758d70d3328babb7757fecb95bb5031 # timeout=10
+[helloworld-stit-maven-build-adhoc] $ /bin/sh -xe /tmp/jenkins3972080210002559783.sh
++ java -cp /opt/jenkins/artifacts/ci-maven-1.0.jar com.test.Project
+Hello, MNT Lab!
++ java -cp /opt/jenkins/artifacts/ com.test.Project
+Error: Could not find or load main class com.test.Project
+Build step 'Execute shell' marked build as failure
+Recording test results
+ERROR: Step ‘Publish JUnit test result report’ failed: Test reports were found but none of them are new. Did leafNodes run? 
+For example, /opt/jenkins/workspace/helloworld-stit-maven-build-adhoc/home-task/build/test-results/test/TEST-com.test.UnitTest.xml is 2 min 18 sec old
+
+Finished: FAILURE

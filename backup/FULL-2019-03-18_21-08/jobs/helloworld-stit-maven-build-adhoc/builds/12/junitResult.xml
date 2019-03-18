@@ -1,0 +1,35 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1.27">
+  <suites>
+    <suite>
+      <file>/opt/jenkins/workspace/helloworld-stit-maven-build-adhoc/home-task/build/test-results/test/TEST-com.test.UnitTest.xml</file>
+      <name>com.test.UnitTest</name>
+      <stdout>test
+</stdout>
+      <stderr></stderr>
+      <duration>0.062</duration>
+      <timestamp>2019-03-17T21:08:06</timestamp>
+      <time>0.062</time>
+      <enclosingBlocks/>
+      <enclosingBlockNames/>
+      <cases>
+        <case>
+          <duration>0.062</duration>
+          <className>com.test.UnitTest</className>
+          <testName>test</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>com.test.UnitTest</className>
+          <testName>testAppHasAGreeting</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>0.062</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

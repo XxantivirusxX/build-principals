@@ -1,0 +1,9 @@
+Started by upstream project "[8mha:////4AINtfKXwI5199M9ffaEZCRJhr/0WzVcjhMcrxqTss4xAAAAth+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzVEgZt/az8JP2M1Jyc/PL8opwU3eKSzBLd3MSy1DzdpNJMoEBiaUl+bmJJaoo+AODtSbDgAAAA[0mhelloworld-stit-maven-build-automated" build number [8mha:////4BXo/gxyfivVozOCDCf2Rk8k85xrnHOiX8ZrD8xFg7pXAAAAth+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBh39rPwk/YzUnJz88vyinBTd4pLMEt3cxLLUPN2k0kygQGJpSX5uYklqir4FABQYhKvhAAAA[0m8
+originally caused by:
+ Started by user [8mha:////4BdXCj5WeVOtKEohJQaIGCSuHgDpsIOuvXHLXbpnxBnSAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mJENKA
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /opt/jenkins/workspace/helloworld-stit-maven-build-adhoc
+[helloworld-stit-maven-build-adhoc] $ /bin/sh -xe /tmp/jenkins4572245118836923013.sh
++ java -cp /opt/jenkins/artifacts/ci-maven-1.0.jar com.test.Project
+Hello, MNT Lab!
+Finished: SUCCESS

@@ -1,0 +1,8 @@
+Started by user [8mha:////4BdXCj5WeVOtKEohJQaIGCSuHgDpsIOuvXHLXbpnxBnSAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mJENKA
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4MeQxDyXcCjR9O7Y8R0pESTK8rkLi8x+Txpg2wCIfdrwAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZh/eT83ILSktQi/azUvMrE4pwyQwCsKx22yAAAAA==[0mjenyaslv1 (slave1) in workspace /home/jenkins/workspace/helloworld-stit-maven-build-adhoc
+[helloworld-stit-maven-build-adhoc] $ /bin/sh -xe /tmp/jenkins7692513655173954907.sh
++ java -cp '/opt/jenkins/artifacts/ci*.jar' com.test.Project
+Error: Could not find or load main class com.test.Project
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,10 @@
+Started by upstream project "[8mha:////4JUdWmN3VyxBdwgq/P8RS1mEGxMpPe0LRY+sX8okaBHAAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/az8JH3f0pySTBADAD3JtMnDAAAA[0mMultijob" build number [8mha:////4BTM+zaUY2BBc1XYC75qX3QnOKXhJQmVL1MziFxfdEYqAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBn79rPwkfd/SnJJMEMMIAJlKXzLEAAAA[0m2
+originally caused by:
+ Started by user [8mha:////4BdXCj5WeVOtKEohJQaIGCSuHgDpsIOuvXHLXbpnxBnSAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mJENKA
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /opt/jenkins/workspace/job1
+[job1] $ /bin/sh -xe /tmp/jenkins1362195165021387369.sh
++ echo job1
+job1
++ sleep 20
+Finished: SUCCESS

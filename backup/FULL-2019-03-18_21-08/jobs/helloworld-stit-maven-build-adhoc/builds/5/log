@@ -1,0 +1,11 @@
+Started by user [8mha:////4BdXCj5WeVOtKEohJQaIGCSuHgDpsIOuvXHLXbpnxBnSAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mJENKA
+[EnvInject] - Loading node environment variables.
+[EnvInject] - Preparing an environment for the build.
+[EnvInject] - Keeping Jenkins system variables.
+[EnvInject] - Keeping Jenkins build variables.
+[EnvInject] - Injecting contributions.
+Building on master in workspace /opt/jenkins/workspace/helloworld-stit-maven-build-adhoc
+[helloworld-stit-maven-build-adhoc] $ /bin/sh -xe /tmp/jenkins4991641621402276732.sh
++ java -cp /opt/jenkins/artifacts/ci-maven-1.0.jar com.test.Project
+Hello, MNT Lab!
+Finished: SUCCESS

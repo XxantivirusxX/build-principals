@@ -1,0 +1,34 @@
+Started by upstream project "[8mha:////4JUdWmN3VyxBdwgq/P8RS1mEGxMpPe0LRY+sX8okaBHAAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/az8JH3f0pySTBADAD3JtMnDAAAA[0mMultijob" build number [8mha:////4BTM+zaUY2BBc1XYC75qX3QnOKXhJQmVL1MziFxfdEYqAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBn79rPwkfd/SnJJMEMMIAJlKXzLEAAAA[0m2
+originally caused by:
+ Started by user [8mha:////4BdXCj5WeVOtKEohJQaIGCSuHgDpsIOuvXHLXbpnxBnSAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mJENKA
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4MeQxDyXcCjR9O7Y8R0pESTK8rkLi8x+Txpg2wCIfdrwAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZh/eT83ILSktQi/azUvMrE4pwyQwCsKx22yAAAAA==[0mjenyaslv1 (slave1) in workspace /home/jenkins/workspace/job2
+No credentials specified
+ > /usr/bin/git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://github.com/MNT-Lab/build-principals/ # timeout=10
+Fetching upstream changes from https://github.com/MNT-Lab/build-principals/
+ > /usr/bin/git --version # timeout=10
+ > /usr/bin/git fetch --tags --progress https://github.com/MNT-Lab/build-principals/ +refs/heads/*:refs/remotes/origin/*
+ > /usr/bin/git rev-parse refs/remotes/origin/stit^{commit} # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/origin/stit^{commit} # timeout=10
+Checking out Revision fc44032a6758d70d3328babb7757fecb95bb5031 (refs/remotes/origin/stit)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f fc44032a6758d70d3328babb7757fecb95bb5031
+Commit message: "add block jar for create ci-gradle.jar"
+ > /usr/bin/git rev-list --no-walk fc44032a6758d70d3328babb7757fecb95bb5031 # timeout=10
+[job2] $ /bin/sh -xe /tmp/jenkins4877972990714440366.sh
++ sleep 20
++ echo job2
+job2
++ ls -la
+total 8
+drwxrwxr-x 6 jenkins jenkins 117 Mar 18 17:07 .
+drwxrwxr-x 5 jenkins jenkins  46 Mar 18 18:07 ..
+drwxrwxr-x 8 jenkins jenkins 162 Mar 18 18:10 .git
+-rw-rw-r-- 1 jenkins jenkins   5 Mar 18 17:07 .gitignore
+drwxrwxr-x 3 jenkins jenkins  42 Mar 18 17:07 helloworld-project
+drwxrwxr-x 7 jenkins jenkins 165 Mar 18 17:07 home-task
+-rw-rw-r-- 1 jenkins jenkins  49 Mar 18 17:07 README.md
+drwxrwxr-x 4 jenkins jenkins  67 Mar 18 17:07 simple-sample
+Finished: SUCCESS

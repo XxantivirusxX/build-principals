@@ -1,0 +1,7 @@
+Started by user [8mha:////4BdXCj5WeVOtKEohJQaIGCSuHgDpsIOuvXHLXbpnxBnSAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mJENKA
+Building remotely on [8mha:////4MeQxDyXcCjR9O7Y8R0pESTK8rkLi8x+Txpg2wCIfdrwAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZh/eT83ILSktQi/azUvMrE4pwyQwCsKx22yAAAAA==[0mjenyaslv1 (slave1) in workspace /home/jenkins/workspace/job2
+[job2] $ /bin/sh -xe /tmp/jenkins4287208267109074696.sh
++ sleep 10
++ echo job2
+job2
+Finished: SUCCESS

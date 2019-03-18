@@ -22,13 +22,14 @@ dependencies {
 }	
 jar {
     baseName = 'htask_arom'
-    version =  '${BUILD_NUMBER}'
+    version =  '1.0.0'
     manifest {
         attributes 'Main-Class': 'com.test.Project'
     }
 }
-task my_build {
-    println "build.buildName is build succesfully"
+task my_build (type: Jar) {
+    
+    println "Jar is build succesfully"
 }
 
 task my_test {

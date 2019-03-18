@@ -1,5 +1,8 @@
 apply plugin: 'java'
 
+group = 'com.mnt.training'
+version = '1.0'
+
 repositories {
    jcenter()
    mavenCentral()
@@ -15,4 +18,16 @@ jar {
    manifest {
       attributes 'Main-Class': 'com.test.Project'
    }
+}
+
+task build (overwrite: true){
+    doLast {
+        println('CUSTOM BUILD TASK')
+    }
+}
+
+task hello(dependsOn: 'build'){
+    doLast {
+        println('HELLO THERE')
+    }
 }

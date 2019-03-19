@@ -1,0 +1,61 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <org.biouno.unochoice.ChoiceParameter plugin="uno-choice@2.1">
+          <name>choose_file</name>
+          <description></description>
+          <randomName>choice-parameter-8785307163797</randomName>
+          <visibleItemCount>1</visibleItemCount>
+          <script class="org.biouno.unochoice.model.GroovyScript">
+            <secureScript plugin="script-security@1.54">
+              <script>import groovy.io.*
+
+def listfiles(dir) {
+	dlist = []
+	flist = []
+	new File(dir).eachDir {dlist &lt;&lt; it.name }
+	dlist.sort()
+	new File(dir).eachFile(FileType.FILES, {flist &lt;&lt; it.name })
+	flist.sort()
+	return (dlist &lt;&lt; flist).flatten()
+}
+
+fs = listfiles(&quot;/opt/jenkins/.jenkins/artifacts&quot;)
+fs.each {
+	println it
+}</script>
+              <sandbox>false</sandbox>
+            </secureScript>
+            <secureFallbackScript plugin="script-security@1.54">
+              <script></script>
+              <sandbox>false</sandbox>
+            </secureFallbackScript>
+          </script>
+          <projectName>DAY5-manual-exec</projectName>
+          <choiceType>PT_SINGLE_SELECT</choiceType>
+          <filterable>false</filterable>
+          <filterLength>1</filterLength>
+        </org.biouno.unochoice.ChoiceParameter>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>java -jar /opt/jenkins/.jenkins/artifacts/$choose_file</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

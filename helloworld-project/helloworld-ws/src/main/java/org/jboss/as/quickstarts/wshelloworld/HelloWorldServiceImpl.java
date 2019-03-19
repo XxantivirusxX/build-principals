@@ -83,7 +83,7 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         }
 
         nameBuilder.append("!");
-
+        nameBuilder.append("Oh, hi, Mark");
         return nameBuilder.toString();
     }
 }

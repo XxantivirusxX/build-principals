@@ -1,0 +1,11 @@
+Started by upstream project "[8mha:////4K+wYkiSU4NUmkVbWRgNf7U0OsBM0SN5wGTqKe7cFcjrAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/az8JP3izNyCnFTdxNKS/NzEktQUfQAMcQyIywAAAA==[0msimple-automated" build number [8mha:////4DTmkvTy5Ten58flbwDk3Xi7Sz5LZGPex5XTCRshtHVxAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYJ/az8JP3izNyCnFTdxNKS/NzEktQUfUMzAIXSbZzNAAAA[0m16
+originally caused by:
+ Started by timer
+Running as SYSTEM
+Building in workspace /opt/jenkins/.jenkins/workspace/simple-adhoc
+[simple-adhoc] $ /bin/sh -xe /tmp/jenkins3201854214288290800.sh
++ pwd
+/opt/jenkins/.jenkins/workspace/simple-adhoc
++ java -cp /opt/jenkins/.jenkins/artifacts/helloworld-0.2.jar com.test.Project
+Hello, MNT Lab!
+Finished: SUCCESS

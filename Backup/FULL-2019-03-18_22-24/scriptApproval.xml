@@ -1,0 +1,38 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<scriptApproval plugin="script-security@1.54">
+  <approvedScriptHashes>
+    <string>017d0db438428731cd600b6ebda805065433520f</string>
+    <string>07e7ed078b3fc51757dd108e9d47e1300c95de0b</string>
+    <string>96a6d30654cb1964ca221fd1d2b2677787cc22a7</string>
+    <string>a441fd30f6e1a986fbf75bb65718dbfa3fd406ef</string>
+    <string>e9cb41d50d0608d71f2963a3b05649292b15ade5</string>
+  </approvedScriptHashes>
+  <approvedSignatures/>
+  <aclApprovedSignatures/>
+  <approvedClasspathEntries/>
+  <pendingScripts>
+    <pendingScript>
+      <context/>
+      <script>import groovy.io.FileType
+
+def list = []
+
+new File(&apos;/opt/jenkins/artifacts&apos;).eachFileRecurse(FileType.FILES) { 
+file -&gt;
+list &lt;&lt; file.name
+}
+return list
+
+
+</script>
+      <language>groovy</language>
+    </pendingScript>
+    <pendingScript>
+      <context/>
+      <script></script>
+      <language>groovy</language>
+    </pendingScript>
+  </pendingScripts>
+  <pendingSignatures/>
+  <pendingClasspathEntries/>
+</scriptApproval>

@@ -6,13 +6,10 @@ import org.apache.log4j.Logger;
 class Project {
 
  public String getGreeting() {
+    while(true) {
         return "Hello, MNT Lab!";
+        }
     }
-
-   public static void main(String[] args) {
-       System.out.println("Hello World!");
-   }
- 
  
   public static void test() {
     System.out.println("test");

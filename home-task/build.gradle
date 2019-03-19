@@ -1,8 +1,8 @@
 apply plugin: 'java'
 
 repositories {
-  mavenCentral()
-  jcenter()
+   mavenCentral()
+   jcenter()
 }
 
 dependencies {
@@ -11,27 +11,38 @@ dependencies {
    testCompile 'junit:junit:4.12'
 }
 
-task build (type: Jar, overwrite: true) {
-    baseName = 'hello-dyurchanka-gradle' 
-    manifest {
-      attributes 'Main-Class': 'com.test.Project'
-    }
-     doLast {
-        println 'build task!'
-    }
+// I tryed to overwrite build task, but manifest there is not working
+jar {
+     manifest {
+     attributes 'Main-Class': 'com.test.Project'
+   }
+   baseName = 'hello-dyurchanka-gradle'
+   doLast {
+     println 'build task!'
+   }
 }
 
+//task build (type: Jar, overwrite: true) {
+//   manifest {
+//     attributes 'Main-Class': 'com.test.Project'
+//   }
+//   baseName = 'hello-dyurchanka-gradle' 
+//   doLast {
+//     println 'build task!'
+//   }
+//}
+
 task test (type: Test, overwrite: true) {
-    // cannot depend on build, it will make loop.
-    doLast {
-       println 'test task!'
-    }
+   // cannot depend on build, it will make loop.
+   doLast {
+      println 'test task!'
+   }
 }
 
 
 task hello(dependsOn: 'build'){
-    doLast {
-        println('hello task')
-    }
+   doLast {
+       println('hello task')
+   }
 }
 

@@ -28,9 +28,6 @@ import javax.jws.WebService;
 
 @WebService(targetNamespace = "http://www.jboss.org/eap/quickstarts/wshelloworld/HelloWorld")
 public interface HelloWorldService {
-    while(true){
-	    print("ZOMG!! bugz!!");
-    }
     /**
      * Say hello as a response
      *

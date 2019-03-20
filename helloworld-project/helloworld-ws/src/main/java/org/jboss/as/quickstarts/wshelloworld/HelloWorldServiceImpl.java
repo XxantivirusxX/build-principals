@@ -31,18 +31,10 @@ import javax.jws.WebService;
 public class HelloWorldServiceImpl implements HelloWorldService {
     @Override
     public String sayHello() {
-    	String nothing0 = "Just nothing";
-    	String nothing1 = "Just nothing";
-    	String nothing2 = "Just nothing";
-    	String nothing3 = "Just nothing";
-    	String nothing4 = "Just nothing";
-    	String nothing5 = "Just nothing";
-    	String nothing6 = "Just nothing";
-    	String nothing7 = "Just nothing";
-    	String nothing8 = "Just nothing";
-    	String nothing9 = "Just nothing";
-    	String nothing10 = "Just nothing";
-    	String nothing11 = "Just nothing";
+	int i = 0;
+    	while(i <= 10){
+		System.out.println("hello");
+	}
         return "Hello World!";
     }
 

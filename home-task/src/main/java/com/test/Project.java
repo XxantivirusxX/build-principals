@@ -8,12 +8,7 @@ class Project {
  public String getGreeting() {
         return "Hello, MNT Lab!";
     }
-   public static void main(String[] args) {
-        for(;;){
-            print("printing...");
-        }
-    }
- 
+
   public static void test() {
     System.out.println("test");
   }

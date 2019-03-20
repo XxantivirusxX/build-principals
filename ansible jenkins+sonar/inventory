@@ -1,0 +1,10 @@
+[masters]
+192.168.56.101 
+[workers]
+192.168.56.101 
+[servers:children]
+masters
+workers
+[all:vars]
+ansible_user=root 
+ansible_ssh_pass=vagrant 

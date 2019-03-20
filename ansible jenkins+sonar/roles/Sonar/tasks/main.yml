@@ -1,0 +1,20 @@
+---
+# tasks file for Sonar
+- name: Sonar install
+  shell: |
+    systemctl restart postgresql
+    cd /opt
+    wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.6.zip
+    unzip sonarqube-7.6.zip
+    chown -R jenkins:jenkins sonarqube-7.6/
+    
+#- name: copy sonar config
+#  copy:
+#    src: sonar.properties
+#    dest: /opt/sonarqube-7.6/conf/sonar.properties
+
+- name: Sonar install
+  shell: /opt/sonarqube-7.6/bin/linux-x86-64/sonar.sh start   
+  become: yes
+  become_user: jenkins
+

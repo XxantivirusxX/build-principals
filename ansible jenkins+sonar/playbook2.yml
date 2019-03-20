@@ -1,0 +1,11 @@
+- name: Installing
+  gather_facts: No
+  hosts: all
+  become: yes
+  
+  roles:
+  - common
+  - create_user
+  - PostrgeSQL
+  - Sonar
+  - nginx

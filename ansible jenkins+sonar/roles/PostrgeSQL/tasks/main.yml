@@ -1,0 +1,42 @@
+---
+# tasks file for PostrgeSQL
+- name: install postrgres
+  yum:
+    name: 
+    - postgresql-server
+    - postgresql-contrib
+    state: latest
+
+- name: Setup initdb
+  shell: postgresql-setup initdb
+
+- name: copy postgres config
+  copy:
+    src: pg_hba.conf
+    dest: /var/lib/pgsql/9.4/data/pg_hba.conf
+
+- name: start postgresql
+  service:
+    name: postgresql
+    state: started
+    enabled: yes
+
+- name: password for user
+  shell: echo -e "postgres\npostgres" | passwd postgres
+
+- name: Config initdb
+  shell: |
+    psql -c "create user sonar"
+    psql -c "alter role sonar with creatdb"
+    psql -c "alter user sonar with encrypted password 'sonar'"
+    psql -c "create database sonar owner sonar"
+    psql -c "grant all privileges on database sonar to sonar"
+    psql -c "create database sonar owner sonar"
+    psql -c "grant all privileges on database sonar to sonar"
+  become: yes
+  become_user: postgres
+
+
+
+
+

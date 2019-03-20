@@ -41,7 +41,13 @@
         <!-- Remote Server URL -->
         <remote.server.url>http://localhost:8080/</remote.server.url>
     </properties>
-
+    <distributionManagment>
+        <repository>
+           <id>depl</id>
+            <name>depl</name>
+            <url>http://192.168.56.22:8081/repository/lab-maven-h-rel/</url>
+        </repository>
+    </distributionManagment>
     <dependencies>
         <!-- Import the CDI API, we use provided scope as the API is included
             in JBoss EAP -->

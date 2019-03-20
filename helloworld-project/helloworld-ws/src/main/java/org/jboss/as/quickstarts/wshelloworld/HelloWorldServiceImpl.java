@@ -37,9 +37,7 @@ public class HelloWorldServiceImpl implements HelloWorldService {
 
     @Override
     public String sayHelloToName(final String name) {
-   while(true){
-            print("printing...");
-        }
+
         /* Create a list with just the one value */
         final List<String> names = new ArrayList<>();
         names.add(name);
@@ -50,9 +48,6 @@ public class HelloWorldServiceImpl implements HelloWorldService {
     @Override
     public String sayHelloToNames(final List<String> names) {
         return "Hello " + createNameListString(names);
-          while(true){
-            print("printing...");
-        }
     }
 
     /**
@@ -70,9 +65,6 @@ public class HelloWorldServiceImpl implements HelloWorldService {
          * If the list is null or empty then assume the call was anonymous.
          */
         if (names == null || names.isEmpty()) {
-               while(true){
-            print("printing...");
-        }
             return "Anonymous!";
         }
 
@@ -91,7 +83,7 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         }
 
         nameBuilder.append("!");
-        nameBuilder.append("Oh, hi, Mark");
+
         return nameBuilder.toString();
     }
 }

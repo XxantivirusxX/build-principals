@@ -31,10 +31,10 @@ import javax.jws.WebService;
 public class HelloWorldServiceImpl implements HelloWorldService {
     @Override
     public String sayHello() {
-	int i = 0;
+	/* int i = 0;
     	while(i <= 10){
 		System.out.println("hello");
-	}
+	} */
         return "Hello World!";
     }
 

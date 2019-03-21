@@ -16,8 +16,10 @@
  */
 package org.jboss.as.quickstarts.wshelloworld;
 
+
 /*
-test commit
+test commit 2
+
 */
 
 

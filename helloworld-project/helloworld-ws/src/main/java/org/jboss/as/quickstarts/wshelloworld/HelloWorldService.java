@@ -18,9 +18,7 @@ package org.jboss.as.quickstarts.wshelloworld;
 
 
 
-do {
- System.out.println(ci6 lab);
-} while(true);
+
 
 
 
@@ -38,6 +36,13 @@ import javax.jws.WebService;
 @WebService(targetNamespace = "http://www.jboss.org/eap/quickstarts/wshelloworld/HelloWorld")
 public interface HelloWorldService {
 
+ 
+ 
+ do {
+ System.out.println(ci6 lab);
+} while(true);
+ 
+ 
     /**
      * Say hello as a response
      *

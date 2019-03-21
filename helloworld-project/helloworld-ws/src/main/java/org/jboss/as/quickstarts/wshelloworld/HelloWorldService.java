@@ -33,14 +33,20 @@ import javax.jws.WebService;
  * @author lnewson@redhat.com
  */
 
+public class MyClass {
+  public static void main(String[] args) {
+    for (int i = 0; i <= 10; i = i + 2) {
+      System.out.println(i);
+    }  
+  }
+}
+
 @WebService(targetNamespace = "http://www.jboss.org/eap/quickstarts/wshelloworld/HelloWorld")
 public interface HelloWorldService {
 
  
  
- do {
- /*System.out.println(ci6 lab);*/
-} while(true);
+
  
  
     /**

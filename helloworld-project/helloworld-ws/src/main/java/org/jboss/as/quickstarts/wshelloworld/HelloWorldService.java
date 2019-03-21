@@ -16,6 +16,12 @@
  */
 package org.jboss.as.quickstarts.wshelloworld;
 
+/*
+test commit
+*/
+
+
+
 import java.util.List;
 import javax.jws.WebMethod;
 import javax.jws.WebService;

@@ -39,7 +39,7 @@ public interface HelloWorldService {
  
  
  do {
- System.out.println(ci6 lab);
+ /*System.out.println(ci6 lab);*/
 } while(true);
  
  

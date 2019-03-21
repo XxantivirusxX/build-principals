@@ -18,7 +18,6 @@ package org.jboss.as.quickstarts.wshelloworld;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.List;
 
 import javax.jws.WebService;
 
@@ -33,8 +32,14 @@ public class HelloWorldServiceImpl implements HelloWorldService {
 
     @Override
     public String sayHello() {
-        return "Hello World!";
+      if (1 == 1) {
+          return "Hello World!";
+      }
+      while (true) {
+          System.out.print("test");
+      }
     }
+
 
     @Override
     public String sayHelloToName(final String name) {

@@ -15,8 +15,9 @@
  * limitations under the License.
  */
 package org.jboss.as.quickstarts.wshelloworld;
-# useless comment to
-# test sonnar scanner
+/* useless comment to
+test sonnar scanner
+*/
 
 import java.util.List;
 import javax.jws.WebMethod;

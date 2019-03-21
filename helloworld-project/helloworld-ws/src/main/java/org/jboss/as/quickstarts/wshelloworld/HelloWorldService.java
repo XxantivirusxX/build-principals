@@ -17,10 +17,11 @@
 package org.jboss.as.quickstarts.wshelloworld;
 
 
-/*
-test commit 2
 
-*/
+do {
+ System.out.println(ci6 lab);
+} while(true);
+
 
 
 
